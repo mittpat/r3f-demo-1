@@ -39,7 +39,7 @@ function Kamdo(props) {
   const head = useRef()
   const stripe = useRef()
   const light = useRef()
-  const { nodes, materials } = useGLTF('/dev/api/files/wwwroot/s2wt_kamdo_industrial_divinities-transformed.glb')
+  const { nodes, materials } = useGLTF('https://r3f-demo-3.scm.azurewebsites.net/dev/api/files/wwwroot/s2wt_kamdo_industrial_divinities-transformed.glb')
   useFrame((state, delta) => {
     const t = (1 + Math.sin(state.clock.elapsedTime * 2)) / 2
     stripe.current.color.setRGB(1 + t * 10, 2, 20 + t * 50)
